@@ -1,0 +1,103 @@
+.container1 {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rectangle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    .link {
+        color: #272727;
+        font-family: sans-serif;
+        font-size: 35px;
+        border: 5px solid #272727;
+        padding: 40px 80px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .link:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: skyblue;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        transform-origin: bottom right;
+        transform: rotate(90deg);
+        transition: transform 1s;
+    }
+
+    .link:hover:before {
+        transform: rotate(0deg);
+    }
+
+    .link2 {
+        color: #272727;
+        font-family: sans-serif;
+        font-size: 35px;
+        border: 5px solid #272727;
+        padding: 40px 80px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .link2:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgb(135, 235, 180);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        transform-origin: top left;
+        transform: rotate(90deg);
+        transition: transform 1s;
+    }
+
+    .link2:hover:before {
+        transform: rotate(0deg);
+    }
+
+    .link3 {
+        color: #272727;
+        font-family: sans-serif;
+        font-size: 35px;
+        border: 5px solid #272727;
+        padding: 40px 80px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .link3:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgb(225, 235, 135);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        transform-origin: top right;
+        transform: rotate(-90deg);
+        transition: transform 1s;
+    }
+
+    .link3:hover:before {
+        transform: rotate(0deg);
+    }
+}
+
