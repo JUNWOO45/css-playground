@@ -473,3 +473,34 @@ h1 {
         transform: scaleY(1);
     }
 }
+
+.link12 {
+    @include box-style(tomato, tomato);
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.link12:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include flex-center();
+    background-color: tomato;
+    // color: tomato;
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    transition: all 0.5s;
+    height: 0%;
+}
+
+.link12:hover:before {
+    height: 100%;
+}
+
+.link12:hover {
+    color: white;
+}
