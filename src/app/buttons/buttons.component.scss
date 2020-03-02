@@ -361,3 +361,59 @@ h1 {
     opacity: 1;
     transform: scale(1)
 }
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    list-style-type: none;
+
+    li {
+        margin: 20px;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: red;
+        text-decoration: none;
+        text-transform: capitalize;
+        position: relative;
+        transition: all 0.5s;
+        border-radius: 5px;
+
+        span {
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            background-color: #818181;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            transform: scaleY(0);
+            transition: all 0.5s;
+            transform-origin: top;
+            
+        }
+
+        span:nth-child(2) {
+            left: 25%;
+            transition-delay: 150ms;
+        }
+
+        span:nth-child(3) {
+            left: 50%;
+            transition-delay: 300ms;
+        }
+        span:nth-child(4) {
+            left: 75%;
+            transition-delay: 450ms;
+        }
+    }
+    li:hover {
+        color: white;
+    }
+
+    li:hover span {
+        transform: scaleY(1);
+    }
+}
