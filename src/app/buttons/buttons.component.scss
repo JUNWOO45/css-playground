@@ -504,3 +504,180 @@ h1 {
 .link12:hover {
     color: white;
 }
+
+.link13 {
+    @include box-style(ORANGE, ORANGE);
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.link13:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include flex-center();
+    background-color: orange;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+    height: 0%;
+}
+
+.link13:hover:before {
+    height: 190%;
+}
+
+.link13:hover {
+    color: white;
+}
+
+.link14 {
+    @include box-style(GoldenRod, GoldenRod);
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.link14:before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include flex-center();
+    background-color: GoldenRod;
+    z-index: -1;
+    border-radius: 0 50% 50% 0;
+    transition: all 0.5s;
+    width: 0%;
+}
+
+.link14:hover:before {
+    width: 190%;
+}
+
+.link14:hover {
+    color: white;
+}
+
+.link15 {
+    @include box-style(SeaGreen, SeaGreen);
+    position: relative;
+    color: white;
+    transition: all 0.5s;
+}
+
+.link15:before {
+    content: 'button';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include flex-center();
+    background-color: seagreen;
+    color: white;
+    transition: all 0.7s;
+}
+
+.link15:hover:before {
+    left: 100%;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+}
+
+.link15:after {
+    content: 'button';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    @include flex-center();
+    background-color: seagreen;
+    color: white;
+    transform: scale(0) rotateY(0deg);
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+.link15:hover:after {
+    left: 0;
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+}
+
+.link16 {
+    width: 220px;
+    height: 80px;
+    color: LightBlue;
+    background-color: transparent;
+    font-size: 30px;
+    border: 3px solid LightBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+    transition: all 0.5s;
+    position: relative;
+
+    span {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: LightBlue;
+        transform: scale(0);
+        transition: all 0.3s;
+        z-index: -1;
+    }
+}
+
+.link16:before, .link16:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: Gold;
+    border-radius: 50%;
+    transition: all 0.3s;
+    transform: translateY(-50%);
+    z-index: -1;
+    opacity: 0;
+}
+
+.link16:before {
+    left: 10%;
+    box-shadow: -100px 0 0 gold;
+}
+
+.link16:after {
+    right: 10%;
+    box-shadow: 100px 0 0 gold;
+}
+
+.link16:hover:before {
+    left: 100%;
+    opacity: 1;
+}
+
+.link16:hover:after {
+    right: 100%;
+    opacity: 1;
+}
+
+.link16:hover {
+    color: white;
+    opacity: 1;
+    
+    span {
+        transform: scale(1);
+        transition-delay: 0.2s;
+    }
+}
