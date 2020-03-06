@@ -882,3 +882,54 @@ h1 {
         transform: translateY(-30%);
     }
 }
+
+.img-container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #272727;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    margin: 2%;
+    background-color: #272727;
+    color: white;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            list-style: none;
+            color: white;
+            font-size: 80px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            transition: all 2s;
+        }
+    }
+
+    ul:hover {
+        li {
+            transform: rotate(45deg) translateY(-150px);
+            opacity: 0;
+            filter: blur(20px);
+        }
+
+        li:nth-child(2) {
+            transition-delay: 0.15s;
+        }
+        li:nth-child(3) {
+            transition-delay: 1.3s;
+        }
+        li:nth-child(4) {
+            transition-delay: 0.3s;
+        }
+        li:nth-child(5) {
+            transition-delay: 0.45s;
+        }
+    }
+}
