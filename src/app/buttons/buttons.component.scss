@@ -923,7 +923,7 @@ h1 {
             transition-delay: 0.15s;
         }
         li:nth-child(3) {
-            transition-delay: 1.3s;
+            transition-delay: 2.3s;
         }
         li:nth-child(4) {
             transition-delay: 0.3s;
@@ -931,5 +931,40 @@ h1 {
         li:nth-child(5) {
             transition-delay: 0.45s;
         }
+    }
+}
+
+.img-container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid navy;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    margin: 2%;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        color: #ccc;
+        font-family: verdana;
+        font-size: 80px;
+        position: relative;
+    }
+
+    h1:before {
+        content: 'Loading...';
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: navy;
+        width: 0%;
+        overflow: hidden;
+        transition: all 2s;
+    }
+
+    h1:hover:before {
+        width: 100%;
     }
 }
