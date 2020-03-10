@@ -255,7 +255,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid navy;
+    border: 5px solid #ccc;
     border-radius: 20px;
     width: 500px;
     height: 500px;
@@ -275,7 +275,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        color: navy;
+        color: orangered;
         width: 0%;
         overflow: hidden;
         transition: all 2s ease;

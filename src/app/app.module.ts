@@ -7,6 +7,9 @@ import { TrainingComponent } from './training/training.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { ImageComponent } from './image/image.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { TransitionComponent } from './training/transition/transition.component';
+import { TransformComponent } from './training/transform/transform.component';
+import { ThreeDepthComponent } from './training/three-depth/three-depth.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
     TrainingComponent,
     ButtonsComponent,
     ImageComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    TransitionComponent,
+    TransformComponent,
+    ThreeDepthComponent
   ],
   imports: [
     BrowserModule,

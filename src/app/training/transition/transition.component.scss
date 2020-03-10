@@ -1,0 +1,181 @@
+
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(0, 75, 0);
+    border-radius: 10px;
+    color: white;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+.square2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: olivedrab;
+    border-radius: 10px;
+}
+
+.move {
+    transition-property: translate();
+    transition-duration: 3s;
+}
+
+.move:hover {
+    transform: translate(900px, 0)
+}
+
+.es1-ease {
+    transition-timing-function: ease;
+}
+.es1-linear {
+    transition-timing-function: linear;
+}
+.es1-ease-in {
+    transition-timing-function: ease-in;
+}
+.es1-ease-out {
+    transition-timing-function: ease-out;
+}
+.es1-ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.ex2-default:hover {
+    background-color: blue;
+    transition-duration: 2s;
+}
+
+.ex2-transition-dealy:hover {
+    background-color: blue;
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
+
+.ex3 {
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+.ex3:hover {
+    background-color: red;
+    color: black;
+}
+
+.ex3-transition-protperty {
+    transition-property: background-color color;
+    transition-duration: 2s;
+}
+
+.ex3-transition-protperty:hover {
+    background-color: red;
+    color: black;
+}
+
+.ex3-all {
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.ex3-all:hover {
+    background-color: red;
+    border-radius: 50%;
+    color: black;
+    width: 600px;
+}
+
+.ex3-one-line {
+    transition: background-color 3s ease-in 1s, color 2s ease-in 4s
+}
+
+.ex3-one-line:hover {
+    background-color: red;
+    color: black;
+}
+
+.ex4-translate {
+    transition: transform 2s ease-out;
+}
+
+.ex4-translate:hover {
+    transform: translate(500px, -400px);
+}
+
+.ex4-scale {
+    transition: transform 0.5s ease-out;
+}
+
+.ex4-scale:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.ex4-rotate {
+    transition: transform 0.5s ease-out;
+}
+
+.ex4-rotate:hover {
+    transform: rotate(-220deg);
+    /* transform: rotate(360deg); */
+    /* transform: rotate(1turn); */
+    /* transform: rotate(400grad);  */
+    /* 400grad = 360도 */
+}
+
+.ex4-skew {
+    transition: transform 0.5s;
+}
+
+.ex4-skew:hover {
+    transform: skew(30deg, 19deg);
+}
+
+.ex4-rotate-2 {
+    transition: transform 0.5s;
+    transform-origin: top right;
+}
+
+.ex4-rotate-2:hover {
+    transform: rotate(-45deg);
+}
+
+.container5 {
+    perspective: 1000px;
+}
+
+.ex5-1 {
+    transition: transform 1s;
+}
+
+.ex5-1:hover {
+    transform: translateZ(-300px);
+    /* transform: translateX(300px); */
+}
+
+.ex5-rotate {
+    transition: transform 1s;
+}
+
+.ex5-rotate:hover {
+    transform: rotateY(170deg);
+    /* transform: rotateZ(120deg); */
+}
