@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'css-playground2';
-  heroes = [{name: 'junwoo', skill: 'fireball'}, {name: 'yeoul', skill: 'death-punch'}, {name: 'gaon', skill: 'super-kick'}];
 }
