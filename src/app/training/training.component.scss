@@ -14,14 +14,57 @@ ul {
 
         a {
             text-decoration: none;
-            color: #272727;
+            color: white;
             font-size: 16px;
             display: block;
             padding: 5px 10px;
             margin: 0 20px;
-            position: relative;
-            font-weight: bold;
             cursor: pointer;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        a:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            border: 3px solid #ffb62e;
+            border-right: none;
+            border-top: none;
+            transition: all 0.5s;
+            transform: translate(-5px, 5px);
+        }
+
+        a:hover:before {
+            transform: translate(0);
+            border: 3px solid orangered;
+            border-right: none;
+            border-top: none;
+        }
+
+        a:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            border: 3px solid #ffb62e;
+            border-left: none;
+            border-bottom: none;
+            transition: all 0.5s;
+            transform: translate(5px, -5px);
+        }
+
+        a:hover:after {
+            transform: translate(0);
+            border: 3px solid orangered;
+            border-left: none;
+            border-bottom: none;
         }
     }
 }
