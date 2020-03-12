@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FooComponent } from './foo/foo.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'css-playground2';
+  // foo: Promise<Type<FooComponent>>;
+  foo;
+
+  loadFoo() {
+    if(!this.foo) {
+      this.foo = import(`./foo/foo.component`).then(( { FooComponent }) => FooComponent);
+    }
+  }
 }
