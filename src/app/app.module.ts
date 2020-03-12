@@ -33,7 +33,7 @@ import { FooComponent } from './foo/foo.component';
     AppRoutingModule,
     FontAwesomeModule
   ],
-  entryComponents: [ FooComponent ],
+  // entryComponents: [ FooComponent ],
   providers: [],
   bootstrap: [AppComponent]
 })

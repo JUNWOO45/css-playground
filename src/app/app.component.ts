@@ -8,12 +8,12 @@ import { FooComponent } from './foo/foo.component';
 })
 export class AppComponent {
   title = 'css-playground2';
-  // foo: Promise<Type<FooComponent>>;
-  foo;
+  foo: Promise<Type<FooComponent>>;
 
   loadFoo() {
-    if(!this.foo) {
-      this.foo = import(`./foo/foo.component`).then(( { FooComponent }) => FooComponent);
+    if (!this.foo) {
+      this.foo = import(`./foo/foo.component`)
+                       .then(({ FooComponent }) => FooComponent);
     }
   }
 }
