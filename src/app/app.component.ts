@@ -8,7 +8,8 @@ import { FooComponent } from './foo/foo.component';
 })
 export class AppComponent {
   title = 'css-playground2';
-  foo: Promise<Type<FooComponent>>;
+  // foo: Promise<Type<FooComponent>>;
+  foo;
 
   loadFoo() {
     if (!this.foo) {
