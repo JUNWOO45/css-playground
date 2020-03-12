@@ -12,6 +12,7 @@ import { TransformComponent } from './training/transform/transform.component';
 import { ThreeDepthComponent } from './training/three-depth/three-depth.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AnimationComponent } from './animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     WelcomeComponent,
     TransitionComponent,
     TransformComponent,
-    ThreeDepthComponent
+    ThreeDepthComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,

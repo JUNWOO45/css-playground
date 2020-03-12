@@ -1,0 +1,36 @@
+.animation-container {
+    border-radius: 10px;
+    width: 100vh;
+    height: 30vh;
+    margin: 2%;
+
+    .animation1 {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        animation-name: moving;
+        animation-duration: 3s;
+    }
+
+    .animation2 {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        animation-name: moving2;
+        animation-duration: 3s;
+    }
+
+    @keyframes moving {
+        from { transform: translateX(0); }
+
+        to { transform: translateX(1000px); }
+    }
+    @keyframes moving2 {
+        0% { transform: translateX(0); }
+
+        80% { transform: translateX(1000px); }
+
+        100% { transform: translate(1000px, -150px); }
+    }
+
+}

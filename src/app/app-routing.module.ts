@@ -7,6 +7,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { TransitionComponent } from './training/transition/transition.component';
 import { TransformComponent } from './training/transform/transform.component';
 import { ThreeDepthComponent } from './training/three-depth/three-depth.component';
+import { AnimationComponent } from './animation/animation.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   },
   { path: 'buttons', component: ButtonsComponent },
   { path: 'image', component: ImageComponent },
+  { path: 'animation', component: AnimationComponent },
 ];
 
 @NgModule({
