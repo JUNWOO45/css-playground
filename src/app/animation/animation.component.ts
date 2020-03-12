@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./animation.component.scss']
 })
 export class AnimationComponent implements OnInit {
-
+  animationIsRun: boolean = true;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  turnAnimation() {
+    console.log(this.animationIsRun);
+    return this.animationIsRun = !this.animationIsRun;
   }
 
 }
