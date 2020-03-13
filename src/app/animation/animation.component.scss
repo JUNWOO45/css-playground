@@ -1,68 +1,38 @@
-.animation-container {
-    border-radius: 10px;
-    width: 100vh;
-    height: 30vh;
-    margin: 2%;
+ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(146, 191, 209);
 
-    .animation1 {
-        width: 150px;
-        height: 150px;
-        background-color: red;
-        animation-name: moving;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-        // animation-delay: 2s;
-        animation-timing-function: ease-in; // slow -> faster -> slower
+    li {
+        margin: 0 20px 0 20px;
+        list-style: none;
+        
+        a {
+            color: white;
+            padding: 15px;
+            border: 3px solid white; 
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: capitalize;
+            letter-spacing: -2px;
+            font-family: Spartan;
+            transition: all 0.3s;
+        }
     }
 
-    .animation2 {
-        width: 150px;
-        height: 150px;
-        background-color: blue;
-        animation-name: moving2;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 3;
-        // animation-iteration-count: infinite;
-        animation-direction: alternate-reverse;
-    }
-
-    .animation3 {
-        width: 100px;
-        height: 100px;
-        background-color: green;
-        animation-name: moving3;
-        animation-duration: 0.3s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-    }
-    .animation4 {
-        width: 100px;
-        height: 100px;
-        background-color: pink;
-        animation: moving 5s both 3 ease-out alternate 1s;
-    }
-
-    .stop-animation {
-        animation-play-state: paused;
-    }
-
-    @keyframes moving {
-        from { transform: translateX(0); }
-
-        to { transform: translateX(1000px); }
-    }
-    @keyframes moving2 {
-        0% { transform: translateX(0); }
-
-        80% { transform: translateX(1000px); }
-
-        100% { transform: translate(1000px, -150px); }
-    }
-
-    @keyframes moving3 {
-        0% { transform: translateX(0); }
-
-        100% { transform: translateX(25px); }
+    li:hover {
+        a{
+            letter-spacing: 3px;
+            font-weight: bold;
+            border: 4px solid white;
+            cursor: pointer;
+        }
     }
 }

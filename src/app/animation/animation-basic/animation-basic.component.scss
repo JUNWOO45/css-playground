@@ -1,0 +1,97 @@
+.animation-container {
+    border-radius: 10px;
+    width: 100vh;
+    height: 30vh;
+    margin: 2%;
+
+    .animation1 {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        animation-name: moving;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        // animation-delay: 2s;
+        animation-timing-function: ease-in; // slow -> faster -> slower
+    }
+
+    .animation2 {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        animation-name: moving2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        // animation-iteration-count: 3;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-out;
+    }
+
+    .animation3 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        animation-name: moving3;
+        animation-duration: 0.3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .animation4 {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        animation: moving 5s both 3 ease-out alternate 1s;
+    }
+
+    .animation5 {
+        width: 75px;
+        height: 75px;
+        background-color: orange;
+        animation: moving4 1s both linear alternate infinite;
+    }
+
+    .animation6 {
+        width: 35px;
+        height: 35px;
+        background-color: purple;
+        animation: moving5 1s both linear alternate infinite;
+    }
+
+    .stop-animation {
+        animation-play-state: paused;
+    }
+
+    @keyframes moving {
+        from { transform: translateX(0); }
+
+        to { transform: translateX(1000px); }
+    }
+    @keyframes moving2 {
+        0% { transform: translateX(0); }
+
+        80% { transform: translateX(1000px); }
+
+        100% { transform: translate(1000px, -150px); }
+    }
+
+    @keyframes moving3 {
+        0% { transform: translateX(0); }
+
+        100% { transform: translateX(25px); }
+    }
+
+    @keyframes moving4 {
+        0% { transform: translate(300px, 150px); }
+
+        100% { transform: translate(300px, -450px); }
+    }
+
+    @keyframes moving5 {
+        0% { transform: translate(300px, 150px); }
+
+        20% { transform: translate(0px, 150px); }
+
+        100% { transform: translate(0px, -250px); }
+    }
+}

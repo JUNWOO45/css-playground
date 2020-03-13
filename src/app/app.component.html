@@ -6,9 +6,9 @@
     <li><a routerLink="animation">Animation</a></li>
 </ul>
 
-<button (click)="loadFoo()">Load FooComponent</button>
+<router-outlet></router-outlet>
+
+<!-- <button (click)="loadFoo()">Load FooComponent</button>
 <ng-container *ngIf="foo">
     <ng-template [ngComponentOutlet]="foo | async"></ng-template>
-</ng-container>
-
-<router-outlet></router-outlet>
+</ng-container> -->

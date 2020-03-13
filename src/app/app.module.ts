@@ -14,6 +14,8 @@ import { ThreeDepthComponent } from './training/three-depth/three-depth.componen
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AnimationComponent } from './animation/animation.component';
 import { FooComponent } from './foo/foo.component';
+import { AnimationBasicComponent } from './animation/animation-basic/animation-basic.component';
+import { BalloonComponent } from './animation/balloon/balloon.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { FooComponent } from './foo/foo.component';
     TransformComponent,
     ThreeDepthComponent,
     AnimationComponent,
-    FooComponent
+    FooComponent,
+    AnimationBasicComponent,
+    BalloonComponent
   ],
   imports: [
     BrowserModule,

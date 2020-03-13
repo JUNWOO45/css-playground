@@ -8,20 +8,29 @@ import { TransitionComponent } from './training/transition/transition.component'
 import { TransformComponent } from './training/transform/transform.component';
 import { ThreeDepthComponent } from './training/three-depth/three-depth.component';
 import { AnimationComponent } from './animation/animation.component';
+import { AnimationBasicComponent } from './animation/animation-basic/animation-basic.component';
+import { BalloonComponent } from './animation/balloon/balloon.component';
 
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'training', component: TrainingComponent,
     children: [
-      { path: "training/transition", component: TransitionComponent },
-      { path: "training/transform", component: TransformComponent },
-      { path: "training/threedepth", component: ThreeDepthComponent },
+      { path: "", component: TransitionComponent },
+      { path: "transition", component: TransitionComponent },
+      { path: "transform", component: TransformComponent },
+      { path: "threedepth", component: ThreeDepthComponent },
     ]
   },
   { path: 'buttons', component: ButtonsComponent },
   { path: 'image', component: ImageComponent },
-  { path: 'animation', component: AnimationComponent },
+  { path: 'animation', component: AnimationComponent,
+    children: [
+      { path: '', component: AnimationBasicComponent },
+      { path: 'animation-basic', component: AnimationBasicComponent },
+      { path: 'balloon', component: BalloonComponent },
+    ]
+  },
 ];
 
 @NgModule({

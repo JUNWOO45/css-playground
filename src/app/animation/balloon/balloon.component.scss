@@ -1,0 +1,18 @@
+h1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: arial;
+    font-size: 60px;
+    line-height: 100px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 0 #efefef, 0 2px 0 #efefef, 0 0 0 #efefef, 0 4px 0 #efefef, 0 35px 4px rgba(0,0,0,0.1);
+    animation: floatOnTheCloud 3s infinite linear alternate;
+}
+
+@keyframes floatOnTheCloud {
+    0% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+}
