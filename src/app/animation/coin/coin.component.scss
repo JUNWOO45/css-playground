@@ -1,0 +1,24 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: BurlyWood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+
+    .loading {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: all 0.5s;
+        animation: spinCoin 3s infinite linear alternate;
+        box-shadow: 0 0 0 #efefef, 0 4px 0 #efefef, 0 0 0 #efefef, 0 4px 0 #efefef, 0 10px 4px rgba(0,0,0,0.125);
+    }
+}
+
+@keyframes spinCoin {
+    0% { transform: rotateX(0deg) rotateY(0deg)}
+    50% { transform: rotateX(0deg) rotateY(180deg)}
+    100% { transform: rotateX(180deg) rotateY(180deg)}
+}

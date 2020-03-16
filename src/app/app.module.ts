@@ -16,6 +16,7 @@ import { AnimationComponent } from './animation/animation.component';
 import { FooComponent } from './foo/foo.component';
 import { AnimationBasicComponent } from './animation/animation-basic/animation-basic.component';
 import { BalloonComponent } from './animation/balloon/balloon.component';
+import { CoinComponent } from './animation/coin/coin.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BalloonComponent } from './animation/balloon/balloon.component';
     AnimationComponent,
     FooComponent,
     AnimationBasicComponent,
-    BalloonComponent
+    BalloonComponent,
+    CoinComponent
   ],
   imports: [
     BrowserModule,

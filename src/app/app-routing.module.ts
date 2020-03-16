@@ -10,6 +10,7 @@ import { ThreeDepthComponent } from './training/three-depth/three-depth.componen
 import { AnimationComponent } from './animation/animation.component';
 import { AnimationBasicComponent } from './animation/animation-basic/animation-basic.component';
 import { BalloonComponent } from './animation/balloon/balloon.component';
+import { CoinComponent } from './animation/coin/coin.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
       { path: '', component: AnimationBasicComponent },
       { path: 'animation-basic', component: AnimationBasicComponent },
       { path: 'balloon', component: BalloonComponent },
+      { path: 'coin', component: CoinComponent },
     ]
   },
 ];
