@@ -1,5 +1,5 @@
 h1 {
-    height: 100%;
+    height: calc(100% - 100px - 70px);
     display: flex;
     justify-content: center;
     align-items: center;

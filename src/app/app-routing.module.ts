@@ -11,6 +11,7 @@ import { AnimationComponent } from './animation/animation.component';
 import { AnimationBasicComponent } from './animation/animation-basic/animation-basic.component';
 import { BalloonComponent } from './animation/balloon/balloon.component';
 import { CoinComponent } from './animation/coin/coin.component';
+import { RacingComponent } from './animation/racing/racing.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,7 @@ const routes: Routes = [
       { path: 'animation-basic', component: AnimationBasicComponent },
       { path: 'balloon', component: BalloonComponent },
       { path: 'coin', component: CoinComponent },
+      { path: 'racing', component: RacingComponent },
     ]
   },
 ];

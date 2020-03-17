@@ -1,0 +1,44 @@
+.container {
+    background-color: #272727;
+    // width: 100%;
+    // height: calc(100% - 100px - 70px);
+    height: 100vh;
+    background: url(../../../assets/image5-day.jpg);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    animation: driving 10s linear infinite;
+    z-index: -1;
+
+    .car {
+        position: absolute;
+        left: 300px;
+        bottom: -200px;
+        width: 500px;
+
+        animation: driving-car 2.2s ease-out infinite alternate;
+    }
+
+    .motobike {
+        position: absolute;
+        left: 1500px;
+        bottom: 200px;
+        width: 330px;
+
+        animation: driving-motobike 3s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes driving {
+    from { background-position: bottom left; }
+    to { background-position: bottom right; }
+}
+
+@keyframes driving-motobike {
+    from { transform: translate(0) }
+    to { transform: translate(0, 300px) }
+}
+
+@keyframes driving-car {
+    from { transform: translate(0) }
+    to { transform: translate(0, -200px) }
+}
