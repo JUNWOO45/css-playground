@@ -15,8 +15,8 @@ import { RacingComponent } from './animation/racing/racing.component';
 
 
 const routes: Routes = [
-  { path: '', component: WelcomeComponent },
-  { path: 'training', component: TrainingComponent,
+  { path: '', component: WelcomeComponent, data: { animation: 'Home' }},
+  { path: 'training', component: TrainingComponent, data: { animation: 'Basic' },
     children: [
       { path: "", component: TransitionComponent },
       { path: "transition", component: TransitionComponent },
@@ -24,9 +24,9 @@ const routes: Routes = [
       { path: "threedepth", component: ThreeDepthComponent },
     ]
   },
-  { path: 'buttons', component: ButtonsComponent },
-  { path: 'image', component: ImageComponent },
-  { path: 'animation', component: AnimationComponent,
+  { path: 'buttons', component: ButtonsComponent, data: { animation: 'Button' } },
+  { path: 'image', component: ImageComponent, data: { animation: 'Image' } },
+  { path: 'animation', component: AnimationComponent, data: { animation: 'Animation' },
     children: [
       { path: '', component: AnimationBasicComponent },
       { path: 'animation-basic', component: AnimationBasicComponent },
