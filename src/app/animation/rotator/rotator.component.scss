@@ -1,0 +1,26 @@
+.container {
+    background-color: Coral;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+
+    span:before {
+        margin-left: 15px;
+        content: 'JavaScript';
+        font-size: 60px;
+        font-family: arial;
+        color: #1B1464;
+        animation: switch-word 4s infinite alternate;
+    }
+}
+
+@keyframes switch-word {
+    0% { content: 'TypeScript' }
+
+    50% { content: 'Angular' }
+
+    100% { content: 'RxJS' }
+}
