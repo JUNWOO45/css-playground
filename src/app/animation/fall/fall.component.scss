@@ -1,0 +1,12 @@
+.container {
+    height: 100vh;
+    background-image: url('../../../assets/bg.jpg');
+    // background-repeat: no-repeat;
+    animation: animated-pattern 3s linear infinite;
+}
+
+@keyframes animated-pattern {
+    from { background-position: 0 0 }
+
+    to { background-position: 0 565px; }
+}
