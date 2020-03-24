@@ -21,6 +21,7 @@ import { CoinComponent } from './animation/coin/coin.component';
 import { RacingComponent } from './animation/racing/racing.component';
 import { RotatorComponent } from './animation/rotator/rotator.component';
 import { FallComponent } from './animation/fall/fall.component';
+import { ShakingComponent } from './animation/shaking/shaking.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FallComponent } from './animation/fall/fall.component';
     CoinComponent,
     RacingComponent,
     RotatorComponent,
-    FallComponent
+    FallComponent,
+    ShakingComponent
   ],
   imports: [
     BrowserModule,

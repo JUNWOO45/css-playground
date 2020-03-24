@@ -14,6 +14,7 @@ import { CoinComponent } from './animation/coin/coin.component';
 import { RacingComponent } from './animation/racing/racing.component';
 import { RotatorComponent } from './animation/rotator/rotator.component';
 import { FallComponent } from './animation/fall/fall.component';
+import { ShakingComponent } from './animation/shaking/shaking.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,7 @@ const routes: Routes = [
       { path: 'animation-basic', component: AnimationBasicComponent },
       { path: 'balloon', component: BalloonComponent },
       { path: 'coin', component: CoinComponent },
+      { path: 'shaking', component: ShakingComponent },
       { path: 'racing', component: RacingComponent },
       { path: 'rotator', component: RotatorComponent },
       { path: 'fall', component: FallComponent },
