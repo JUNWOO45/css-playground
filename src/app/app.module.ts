@@ -24,6 +24,7 @@ import { FallComponent } from './animation/fall/fall.component';
 import { ShakingComponent } from './animation/shaking/shaking.component';
 import { BlingComponent } from './animation/bling/bling.component';
 import { LightingComponent } from './animation/lighting/lighting.component';
+import { HeartbeatComponent } from './animation/heartbeat/heartbeat.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { LightingComponent } from './animation/lighting/lighting.component';
     FallComponent,
     ShakingComponent,
     BlingComponent,
-    LightingComponent
+    LightingComponent,
+    HeartbeatComponent
   ],
   imports: [
     BrowserModule,
