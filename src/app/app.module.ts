@@ -23,6 +23,7 @@ import { RotatorComponent } from './animation/rotator/rotator.component';
 import { FallComponent } from './animation/fall/fall.component';
 import { ShakingComponent } from './animation/shaking/shaking.component';
 import { BlingComponent } from './animation/bling/bling.component';
+import { LightingComponent } from './animation/lighting/lighting.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { BlingComponent } from './animation/bling/bling.component';
     RotatorComponent,
     FallComponent,
     ShakingComponent,
-    BlingComponent
+    BlingComponent,
+    LightingComponent
   ],
   imports: [
     BrowserModule,
