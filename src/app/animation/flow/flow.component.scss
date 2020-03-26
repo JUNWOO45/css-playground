@@ -1,0 +1,21 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #273c75;
+
+    h1 {
+        text-align: center;
+        font-size: 250px;
+        background-image: url('../../../assets/bg.jpg');
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: move-left-to-right 5s linear infinite;
+    }
+}
+
+@keyframes move-left-to-right {
+    0% { background-position: 0 0 }
+    100% { background-position: 100% 0 }
+}
