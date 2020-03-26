@@ -12,7 +12,8 @@
         position: relative;
         background-color: #ff3838;
         transform: rotate(45deg);
-        animation: heart-beat 2s linear infinite;
+        animation: heart-beat 1.4s linear infinite;
+        animation-delay: 0.2s;
     }
 
     .heart:before {
@@ -42,9 +43,9 @@
 
 @keyframes heart-beat {
     0% { transform: rotate(45deg) scale(1); }
-    25% { transform: rotate(45deg) scale(0.9); }
-    30% { transform: rotate(45deg) scale(0.75); }
-    50% { transform: rotate(45deg) scale(1); }
-    70% { transform: rotate(45deg) scale(1.25); }
-    100% { transform: rotate(45deg) scale(1); }
+    25% { transform: rotate(45deg) scale(0.8); }
+    30% { transform: rotate(45deg) scale(1); }
+    50% { transform: rotate(45deg) scale(1.25); }
+    70% { transform: rotate(45deg) scale(1); }
+    100% { transform: rotate(45deg) scale(0.9); }
 }
