@@ -1,0 +1,63 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 10px solid white;
+
+        li {
+            list-style: none;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            margin: 0px 10px;
+            border-radius: 50%;
+        }
+
+        li:nth-child(1) {
+            animation: bouncing 1s linear infinite 0.1s;
+        }
+        li:nth-child(2) {
+            animation: bouncing 0.8s ease-out infinite 0.3s;
+        }
+        li:nth-child(3) {
+            animation: bouncing 1s ease-in-out infinite 0.5s;
+        }
+        li:nth-child(4) {
+            animation: bouncing 0.7s ease-in infinite 0.2s;
+        }
+        li:nth-child(5) {
+            animation: bouncing 0.4s linear infinite 0.7s;
+        }
+        li:nth-child(6) {
+            animation: bouncing 0.5s ease-in-out infinite 0.7s;
+        }
+        li:nth-child(7) {
+            animation: bouncing 0.9s linear infinite 0.3s;
+        }
+        li:nth-child(8) {
+            animation: bouncing 0.7s ease-in infinite 0.5s;
+        }
+        li:nth-child(9) {
+            animation: bouncing 0.4s ease-in-out infinite 0.6s;
+        }
+        li:nth-child(10) {
+            animation: bouncing 0.6s linear infinite 0.2s;
+        }
+    }
+}
+
+@keyframes bouncing {
+    0% { transform: translateY(0) }
+    50% { transform: translateY(-250px) }
+    100% { transform: translateY(0) }
+}

@@ -19,6 +19,7 @@ import { BlingComponent } from './animation/bling/bling.component';
 import { LightingComponent } from './animation/lighting/lighting.component';
 import { HeartbeatComponent } from './animation/heartbeat/heartbeat.component';
 import { FlowComponent } from './animation/flow/flow.component';
+import { BouncingComponent } from './animation/bouncing/bouncing.component';
 
 
 const routes: Routes = [
@@ -47,6 +48,7 @@ const routes: Routes = [
       { path: 'fall', component: FallComponent },
       { path: 'flow', component: FlowComponent },
       { path: 'lighting', component: LightingComponent },
+      { path: 'bouncing', component: BouncingComponent },
     ]
   },
 ];
