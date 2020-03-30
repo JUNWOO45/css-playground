@@ -1,0 +1,19 @@
+.container {
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../../../assets/city-night.jpg);
+    background-repeat: none;
+    background-size: cover;
+
+    .rain {
+        height: 100%;
+        background: url(../../../assets/rain.png);
+        animation: rain 0.3s linear infinite;
+    }
+}
+
+@keyframes rain {
+    0% { background-position: 0% 0% }
+    100% { background-position: 50% 100% }
+}

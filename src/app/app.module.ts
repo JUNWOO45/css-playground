@@ -27,6 +27,7 @@ import { LightingComponent } from './animation/lighting/lighting.component';
 import { HeartbeatComponent } from './animation/heartbeat/heartbeat.component';
 import { FlowComponent } from './animation/flow/flow.component';
 import { BouncingComponent } from './animation/bouncing/bouncing.component';
+import { RainComponent } from './animation/rain/rain.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { BouncingComponent } from './animation/bouncing/bouncing.component';
     LightingComponent,
     HeartbeatComponent,
     FlowComponent,
-    BouncingComponent
+    BouncingComponent,
+    RainComponent
   ],
   imports: [
     BrowserModule,

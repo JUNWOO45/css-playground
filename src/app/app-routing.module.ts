@@ -20,6 +20,7 @@ import { LightingComponent } from './animation/lighting/lighting.component';
 import { HeartbeatComponent } from './animation/heartbeat/heartbeat.component';
 import { FlowComponent } from './animation/flow/flow.component';
 import { BouncingComponent } from './animation/bouncing/bouncing.component';
+import { RainComponent } from './animation/rain/rain.component';
 
 
 const routes: Routes = [
@@ -38,6 +39,7 @@ const routes: Routes = [
     children: [
       { path: '', component: AnimationBasicComponent },
       { path: 'animation-basic', component: AnimationBasicComponent },
+      { path: 'rain', component: RainComponent },
       { path: 'balloon', component: BalloonComponent },
       { path: 'heartbeat', component: HeartbeatComponent },
       { path: 'coin', component: CoinComponent },
