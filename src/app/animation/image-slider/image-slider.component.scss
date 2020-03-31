@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .slider {
+        width: 800px;
+        height: 400px;
+        background: url(../../../assets/img-1.jpg);
+        background-repeat: none;
+        background-size: cover;
+        animation: image-slider 10s infinite linear;
+    }
+}
+
+@keyframes image-slider {
+    0% { background: url(../../../assets/img-1.jpg); }
+    10% { background: url(../../../assets/img-2.jpg); }
+    20% { background: url(../../../assets/img-3.jpg); }
+    30% { background: url(../../../assets/img-4.jpg); }
+    40% { background: url(../../../assets/img-1.jpg); }
+    50% { background: url(../../../assets/img-2.jpg); }
+    60% { background: url(../../../assets/img-3.jpg); }
+    70% { background: url(../../../assets/img-4.jpg); }
+    80% { background: url(../../../assets/img-1.jpg); }
+    90% { background: url(../../../assets/img-2.jpg); }
+    100% { background: url(../../../assets/img-3.jpg); }
+}
