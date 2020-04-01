@@ -29,6 +29,7 @@ import { FlowComponent } from './animation/flow/flow.component';
 import { BouncingComponent } from './animation/bouncing/bouncing.component';
 import { RainComponent } from './animation/rain/rain.component';
 import { ImageSliderComponent } from './animation/image-slider/image-slider.component';
+import { MindcontrolComponent } from './animation/mindcontrol/mindcontrol.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { ImageSliderComponent } from './animation/image-slider/image-slider.comp
     FlowComponent,
     BouncingComponent,
     RainComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    MindcontrolComponent
   ],
   imports: [
     BrowserModule,

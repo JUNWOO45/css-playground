@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: mindcontrol 5s infinite linear;
+    font-size: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+@keyframes mindcontrol {
+    0% { color: white; background-color: green; }
+    20% { color: purple; background-color: yellow; }
+    40% { color: orange; background-color: skyblue; }
+    60% { color: lemonchiffon; background-color: navy; }
+    80% { color: #272727; background-color: ivory; }
+    100% { color: blue; background-color: red; }
+}
