@@ -23,6 +23,7 @@ import { BouncingComponent } from './animation/bouncing/bouncing.component';
 import { RainComponent } from './animation/rain/rain.component';
 import { ImageSliderComponent } from './animation/image-slider/image-slider.component';
 import { MindcontrolComponent } from './animation/mindcontrol/mindcontrol.component';
+import { LoaderComponent } from './animation/loader/loader.component';
 
 
 const routes: Routes = [
@@ -55,6 +56,7 @@ const routes: Routes = [
       { path: 'bouncing', component: BouncingComponent },
       { path: 'mindcontrol', component: MindcontrolComponent },
       { path: 'image-slider', component: ImageSliderComponent },
+      { path: 'loader', component: LoaderComponent },
     ]
   },
 ];

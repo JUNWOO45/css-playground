@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color : #ee5253;
+
+    .loader {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        transform: rotate(45deg);
+
+        span {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 4px;
+            animation: loader 2s linear infinite;
+        }
+        span:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        span:nth-child(3) {
+            animation-delay: 1.15s;
+        }
+    }
+}
+
+@keyframes loader {
+    0% { top: 0; left: 0; }
+    12.5% { top: 0; left: 50% }
+    25% { top: 0; left: 50% }
+    37.5% { top: 50%; left: 50% }
+    50% { top: 50%; left: 50% }
+    62.5% { top: 50%; left: 0 }
+    75% { top: 50%; left: 0 }
+    87.5% { top: 0; left: 0 }
+    100% { top: 0; left: 0 }
+}
