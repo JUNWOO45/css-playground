@@ -32,6 +32,7 @@ import { ImageSliderComponent } from './animation/image-slider/image-slider.comp
 import { MindcontrolComponent } from './animation/mindcontrol/mindcontrol.component';
 import { LoaderComponent } from './animation/loader/loader.component';
 import { PreLoaderComponent } from './animation/pre-loader/pre-loader.component';
+import { WaveLoaderComponent } from './animation/wave-loader/wave-loader.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { PreLoaderComponent } from './animation/pre-loader/pre-loader.component'
     ImageSliderComponent,
     MindcontrolComponent,
     LoaderComponent,
-    PreLoaderComponent
+    PreLoaderComponent,
+    WaveLoaderComponent
   ],
   imports: [
     BrowserModule,

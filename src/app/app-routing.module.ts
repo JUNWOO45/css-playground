@@ -25,6 +25,7 @@ import { ImageSliderComponent } from './animation/image-slider/image-slider.comp
 import { MindcontrolComponent } from './animation/mindcontrol/mindcontrol.component';
 import { LoaderComponent } from './animation/loader/loader.component';
 import { PreLoaderComponent } from './animation/pre-loader/pre-loader.component';
+import { WaveLoaderComponent } from './animation/wave-loader/wave-loader.component';
 
 
 const routes: Routes = [
@@ -59,6 +60,7 @@ const routes: Routes = [
       { path: 'image-slider', component: ImageSliderComponent },
       { path: 'loader', component: LoaderComponent },
       { path: 'pre-loader', component: PreLoaderComponent },
+      { path: 'wave-loader', component: WaveLoaderComponent },
     ]
   },
 ];
