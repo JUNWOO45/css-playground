@@ -31,6 +31,7 @@ import { RainComponent } from './animation/rain/rain.component';
 import { ImageSliderComponent } from './animation/image-slider/image-slider.component';
 import { MindcontrolComponent } from './animation/mindcontrol/mindcontrol.component';
 import { LoaderComponent } from './animation/loader/loader.component';
+import { PreLoaderComponent } from './animation/pre-loader/pre-loader.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { LoaderComponent } from './animation/loader/loader.component';
     RainComponent,
     ImageSliderComponent,
     MindcontrolComponent,
-    LoaderComponent
+    LoaderComponent,
+    PreLoaderComponent
   ],
   imports: [
     BrowserModule,

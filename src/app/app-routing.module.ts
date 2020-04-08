@@ -24,6 +24,7 @@ import { RainComponent } from './animation/rain/rain.component';
 import { ImageSliderComponent } from './animation/image-slider/image-slider.component';
 import { MindcontrolComponent } from './animation/mindcontrol/mindcontrol.component';
 import { LoaderComponent } from './animation/loader/loader.component';
+import { PreLoaderComponent } from './animation/pre-loader/pre-loader.component';
 
 
 const routes: Routes = [
@@ -57,6 +58,7 @@ const routes: Routes = [
       { path: 'mindcontrol', component: MindcontrolComponent },
       { path: 'image-slider', component: ImageSliderComponent },
       { path: 'loader', component: LoaderComponent },
+      { path: 'pre-loader', component: PreLoaderComponent },
     ]
   },
 ];
