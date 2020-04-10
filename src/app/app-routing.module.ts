@@ -26,6 +26,7 @@ import { MindcontrolComponent } from './animation/mindcontrol/mindcontrol.compon
 import { LoaderComponent } from './animation/loader/loader.component';
 import { PreLoaderComponent } from './animation/pre-loader/pre-loader.component';
 import { WaveLoaderComponent } from './animation/wave-loader/wave-loader.component';
+import { PulseComponent } from './animation/pulse/pulse.component';
 
 
 const routes: Routes = [
@@ -61,6 +62,7 @@ const routes: Routes = [
       { path: 'loader', component: LoaderComponent },
       { path: 'pre-loader', component: PreLoaderComponent },
       { path: 'wave-loader', component: WaveLoaderComponent },
+      { path: 'pulse', component: PulseComponent },
     ]
   },
 ];

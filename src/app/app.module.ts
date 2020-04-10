@@ -33,6 +33,7 @@ import { MindcontrolComponent } from './animation/mindcontrol/mindcontrol.compon
 import { LoaderComponent } from './animation/loader/loader.component';
 import { PreLoaderComponent } from './animation/pre-loader/pre-loader.component';
 import { WaveLoaderComponent } from './animation/wave-loader/wave-loader.component';
+import { PulseComponent } from './animation/pulse/pulse.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { WaveLoaderComponent } from './animation/wave-loader/wave-loader.compone
     MindcontrolComponent,
     LoaderComponent,
     PreLoaderComponent,
-    WaveLoaderComponent
+    WaveLoaderComponent,
+    PulseComponent
   ],
   imports: [
     BrowserModule,
